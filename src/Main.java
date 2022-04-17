@@ -22,13 +22,15 @@ public class Main {
         MaxHeap heap1 = new MaxHeap(data.length);
 
         heap1.sequentialMaxHeap(data);
-        heap1.getFirst10();
+        System.out.println(heap1.getFirst10());
         System.out.println(heap1.getNumOfSwaps());
+        System.out.println(heap1.removeFirst10());
 
         MaxHeap heap2 = new MaxHeap(data.length);
         heap2.optimalMaxHeap(data);
-        heap2.getFirst10();
+        System.out.println(heap2.getFirst10());
         System.out.println(heap2.getNumOfSwaps());
+        System.out.println(heap2.removeFirst10());
 
 //        try {
 //            FileWriter writer = new FileWriter("output.txt");

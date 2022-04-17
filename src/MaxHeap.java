@@ -178,12 +178,26 @@ public final class MaxHeap<T extends Comparable<? super T>>
       return swaps;
    }
 
-   public void getFirst10()
+   public String getFirst10()
    {
+      String output = "";
       for(int i=1; i <10; i ++)
       {
-         System.out.print(heap[i] + ",");
+         output += heap[i] + ",";
+//         System.out.print(heap[i] + ",");
       }
-      System.out.print("...");
+      output += "...";
+      return output;
+   }
+
+   public String removeFirst10()
+   {
+      for(int i = 0; i < 10; i++)
+      {
+         removeMax();
+      }
+
+      String output = getFirst10();
+      return output;
    }
 }
