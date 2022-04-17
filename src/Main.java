@@ -20,31 +20,25 @@ public class Main {
         }
 
         MaxHeap heap1 = new MaxHeap(data.length);
-
         heap1.sequentialMaxHeap(data);
-        System.out.println(heap1.getFirst10());
-        System.out.println(heap1.getNumOfSwaps());
-        System.out.println(heap1.removeFirst10());
 
         MaxHeap heap2 = new MaxHeap(data.length);
         heap2.optimalMaxHeap(data);
-        System.out.println(heap2.getFirst10());
-        System.out.println(heap2.getNumOfSwaps());
-        System.out.println(heap2.removeFirst10());
 
-//        try {
-//            FileWriter writer = new FileWriter("output.txt");
-//            writer.write("Heap built using sequential insertions: \n");
-//            writer.write("Number of swaps in the heap creation: \n");
-//            writer.write("Heap after 10 removals: \n");
-//            writer.write("\n");
-//            writer.write("Heap built using sequential insertions: \n");
-//            writer.write("Number of swaps in the heap creation: \n");
-//            writer.write("Heap after 10 removals: \n");
-//        }
-//        catch (IOException e)
-//        {
-//            e.printStackTrace();
-//        }
+        try {
+            FileWriter writer = new FileWriter("output.txt");
+            writer.write("Heap built using sequential insertions: " + heap1.getFirst10() + "\n");
+            writer.write("Number of swaps in the heap creation: " + heap1.getNumOfSwaps()+ "\n");
+            writer.write("Heap after 10 removals: " + heap1.removeFirst10()+ "\n");
+            writer.write("\n");
+            writer.write("Heap built using optimal insertions: "  + heap2.getFirst10()+ "\n");
+            writer.write("Number of swaps in the heap creation: " + heap2.getNumOfSwaps()+ "\n");
+            writer.write("Heap after 10 removals: " + heap2.removeFirst10()+ "\n");
+            writer.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 }
