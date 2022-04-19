@@ -143,6 +143,7 @@ public final class MaxHeap<T extends Comparable<? super T>>
    }
 
    public void optimalMaxHeap(T[] entries) {
+      numOfSwaps = 0;
       lastIndex = entries.length;
       assert initialized = true;
 
@@ -154,7 +155,7 @@ public final class MaxHeap<T extends Comparable<? super T>>
    }
 
    public void sequentialMaxHeap(T[] entries) {
-
+      numOfSwaps = 0;
       assert initialized = true;
       for (int index = 0; index < entries.length; index++)
       {
