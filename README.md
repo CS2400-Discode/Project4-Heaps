@@ -9,13 +9,13 @@ Contributions:
 -
 Shane Thomas: Sequential Add / Optimal Add / remove MaxHeap method
 
-Owen Lovett:
+Owen Lovett: File Input/Output / Debugging
 
-Nil Patel:
+Nil Patel: File Input/Output / Debugging
 
 Extra Features:
 -
-Unit Tests using JUnit
+Java Interface and Generics
 
 Video Link:
 - 
