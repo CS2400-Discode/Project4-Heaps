@@ -16,6 +16,3 @@ Nil Patel: File Input/Output / Debugging
 Extra Features:
 -
 Java Interface and Generics
-
-Video Link:
-- 
