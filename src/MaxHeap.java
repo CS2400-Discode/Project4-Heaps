@@ -69,6 +69,7 @@ public final class MaxHeap<T extends Comparable<? super T>>
          heap[newIndex] = heap[parentIndex];
          newIndex = parentIndex;
          parentIndex = newIndex / 2;
+         numOfSwaps++;
       }
       heap[newIndex] = newEntry;
       lastIndex++;
@@ -113,6 +114,7 @@ public final class MaxHeap<T extends Comparable<? super T>>
          {
             done = true;
          }
+         
       }
       heap[rootIndex] = orphan;
    }
